@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="caltamiranoT2.Vistas.vLogin"
+            >
+    <VerticalStackLayout
+        Spacing="25"
+        Padding="30,0">
+
+        <Label 
+            Text="Vista Inicio de sesión"
+            HorizontalTextAlignment="Center"
+            FontSize="20"
+            TextColor="Red"
+            />
+
+
+        <Image Source="login.png"
+               HeightRequest="250"/>
+        <Entry
+            x:Name="txtUsuario"
+            Placeholder="Ingrese su usuario"
+            MaxLength="7"
+            />
+        <Entry
+            x:Name="txtContrasena"
+            Placeholder="ingrese contraseña"
+            IsPassword="True"
+            />
+        <Button
+            x:Name="btnIniciar"
+            Text="INICIAR SESION"
+            Clicked="btnIniciar_Clicked"/>
+        
+    </VerticalStackLayout>
+</ContentPage>

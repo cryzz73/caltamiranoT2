@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="caltamiranoT2.Vistas.vPrincipal"
+             >
+    <VerticalStackLayout>
+        <Label 
+            Text="SISTEMA DE CALIFICACIONES"
+            TextColor="Blue"
+            FontSize="24"
+            HorizontalTextAlignment="Center" 
+            />
+        <Picker
+            x:Name="pkAlumno"
+            Title="Alumnos">
+            <Picker.Items>
+                <x:String>ALTAMIRANO CRISTIAN</x:String>
+                <x:String>ALTAMIRANO NICOLAS</x:String>
+                <x:String>GARCIA FRANCISCO</x:String>
+                <x:String>QUEL CARMEN</x:String>
+                <x:String>QUEL MARCELO</x:String>
+            </Picker.Items>
+
+        </Picker>
+        <Button
+                x:Name="btnPicker"
+                Text="VER ELEMENTO SELECCIONADO"
+                Clicked="Button_Clicked"
+                />
+        <Label
+            x:Name="lblAlumnopk"
+            FontSize="18"
+            TextColor="Blue"/>
+
+        <Entry x:Name="txtSeguimiento1"
+                   Placeholder="Ingrese nota seguimiento 1">
+        </Entry>
+        <Entry x:Name="txtExamen1"
+                   Placeholder="Ingrese examen parcial">
+        </Entry>
+
+        <Button x:Name="btnCalificacion1"
+                    Text="Nota Parcial 1"
+                  Clicked="btnCalificacion1_Clicked"
+                    />
+          <Label
+              x:Name="lblSeguimiento1pk"
+              FontSize="18"
+              TextColor="Blue"/>
+
+        <Entry x:Name="txtSeguimiento2"
+           Placeholder="Ingrese nota seguimiento 2">
+        </Entry>
+        <Entry x:Name="txtExamen2"
+           Placeholder="Ingrese examen parcial">
+        </Entry>
+         <Label
+             x:Name="lblSeguimiento2pk"
+             FontSize="18"
+             TextColor="Blue"/>
+        
+        <Button x:Name="btnCalificacion2"
+            Text="Nota Parcial 2"
+            Clicked="btnCalificacion2_Clicked"
+            />
+
+        <Button x:Name="btnCalificacionFinal"
+                Text="Calificación Final"
+                Clicked="btnCalificacionFinal_Clicked"
+                />
+
+        <Label
+    x:Name="lblFinalpk"
+    FontSize="18"
+    TextColor="Blue"/>
+
+
+
+
+    </VerticalStackLayout>  
+</ContentPage>
