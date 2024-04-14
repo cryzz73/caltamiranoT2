@@ -46,7 +46,7 @@
           <Label
               x:Name="lblSeguimiento1pk"
               FontSize="18"
-              TextColor="Blue"/>
+              TextColor="Red"/>
 
         <Entry x:Name="txtSeguimiento2"
            Placeholder="Ingrese nota seguimiento 2">
@@ -57,25 +57,30 @@
          <Label
              x:Name="lblSeguimiento2pk"
              FontSize="18"
-             TextColor="Blue"/>
+             TextColor="Red"/>
         
         <Button x:Name="btnCalificacion2"
             Text="Nota Parcial 2"
-            Clicked="btnCalificacion2_Clicked"
-            />
-
+            Clicked="btnCalificacion2_Clicked"/>
+        
+            <DatePicker
+            x:Name="dpFecha"
+            Date="01/04/2024"
+            Format="dd/MM/yyyy"/>
+        <Label
+            x:Name="lblDatopk"
+            FontSize="18"
+            TextColor="Red"/>
+        
         <Button x:Name="btnCalificacionFinal"
                 Text="Calificación Final"
                 Clicked="btnCalificacionFinal_Clicked"
                 />
-
+        
         <Label
-    x:Name="lblFinalpk"
-    FontSize="18"
-    TextColor="Blue"/>
-
-
-
-
+            x:Name="lblFinalpk"
+            FontSize="18"
+            TextColor="Blue"/>
+        
     </VerticalStackLayout>  
 </ContentPage>

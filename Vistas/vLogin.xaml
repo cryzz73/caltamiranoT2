@@ -13,8 +13,6 @@
             FontSize="20"
             TextColor="Red"
             />
-
-
         <Image Source="login.png"
                HeightRequest="250"/>
         <Entry
