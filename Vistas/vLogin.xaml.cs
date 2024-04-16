@@ -2,18 +2,22 @@ namespace caltamiranoT2.Vistas;
 
 public partial class vLogin : ContentPage
 {
-	public vLogin()
+    String Usuario1;
+    string Contrasena1;
+	public vLogin(string Usuario,string contrasena)
 	{
 		InitializeComponent();
+        Usuario1 = Usuario;
+        Contrasena1 = contrasena;
 	}
 
     private void btnIniciar_Clicked(object sender, EventArgs e)
     {
-        string Usuario = "uisrael";
-        string contrasena = "12345";
-        if (Usuario == txtUsuario.Text && contrasena == txtContrasena.Text)
+      /*string Usuario = "uisrael";
+        string contrasena = "12345";*/
+        if (Usuario1 == txtUsuario.Text && Contrasena1 == txtContrasena.Text)
         {
-            Navigation.PushAsync(new vPrincipal(<   Usuario));
+            Navigation.PushAsync(new vPrincipal(Usuario1));
         }
         else
         {
@@ -26,6 +30,7 @@ public partial class vLogin : ContentPage
 
     private void btnRegistrar_Clicked(object sender, EventArgs e)
     {
+        Navigation.PushAsync(new vRegistro());
 
     }
 }
