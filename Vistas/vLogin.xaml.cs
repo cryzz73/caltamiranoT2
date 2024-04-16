@@ -13,7 +13,7 @@ public partial class vLogin : ContentPage
         string contrasena = "12345";
         if (Usuario == txtUsuario.Text && contrasena == txtContrasena.Text)
         {
-            Navigation.PushAsync(new vPrincipal());
+            Navigation.PushAsync(new vPrincipal(Usuario));
         }
         else
         {
@@ -22,5 +22,10 @@ public partial class vLogin : ContentPage
             txtContrasena.Text = "";
 
         }
+    }
+
+    private void btnRegistrar_Clicked(object sender, EventArgs e)
+    {
+
     }
 }

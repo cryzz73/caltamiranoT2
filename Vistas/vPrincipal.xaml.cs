@@ -2,10 +2,13 @@ namespace caltamiranoT2.Vistas;
 
 public partial class vPrincipal : ContentPage
 {
-	public vPrincipal()
+	public vPrincipal(string Usuario)
 	{
+        
 		InitializeComponent();
-	}
+        DisplayAlert("Bienvenido", Usuario, "Cerrar");
+        lblUsuario.Text = "Usuario conectado " + Usuario;
+    }
 
     private void Button_Clicked(object sender, EventArgs e)
     {

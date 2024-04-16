@@ -4,6 +4,12 @@
              x:Class="caltamiranoT2.Vistas.vPrincipal"
              >
     <VerticalStackLayout>
+        <Label
+            x:Name="lblUsuario"
+            TextColor="Red"
+            FontSize="14"
+            HorizontalTextAlignment="End"/>
+        
         <Label 
             Text="SISTEMA DE CALIFICACIONES"
             TextColor="Blue"
